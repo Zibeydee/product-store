@@ -1,0 +1,166 @@
+body {
+    background-color: #d1dded;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.all-input-area {
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.first-input-area {
+    display: flex;
+    gap: 20px;
+}
+
+.first-input-area input {
+    width: 35%;
+    height: 20px;
+    border: none;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.first-input-area button {
+    width: 22%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #236482;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-list-area {
+    background-color: rgb(185, 184, 201, 0.2);
+    width: 67%;
+    /* height: 200px; */
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+
+
+}
+
+.product-list-area::-webkit-scrollbar {
+    width: 3px;
+}
+
+.product-list-area::-webkit-scrollbar-thumb {
+    background-color: #99bcc4;
+}
+
+.inputs {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputs input {
+    width: 75%;
+    border: none;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    pointer-events: none;
+
+}
+
+.inputs button {
+    border: none;
+    border-radius: 3px;
+    background-color: #e84374;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.price-quantity-area {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-quantity-area,
+.price-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #318067;
+}
+
+
+@media only screen and (max-width:768px) {
+    .all-input-area {
+        width: 70%;
+
+    }
+
+    
+
+    .product-list-area {
+        width: 100%;
+
+    }
+
+
+    .price-quantity-area {
+        width: 97%;
+
+    }
+
+}
+
+@media only screen and (max-width:431px) {
+    .inputs input {
+        width: 60%;
+
+    }
+
+    .inputs button {
+        padding: 10px 15px;
+
+    }
+
+    .first-input-area button {
+        width: 32%;
+        font-size: 9px;
+        height: 40px;
+      
+    }
+
+
+    .product-quantity-area,
+    .price-area {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+
+    }
+
+
+    .first-input-area input {
+        width: 45%;
+        height: 20px;
+        font-size: 9px;
+    }
+
+
+    
+}
